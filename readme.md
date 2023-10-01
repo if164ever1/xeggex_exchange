@@ -1,4 +1,4 @@
-# Project Name
+# xeggex_exchange
 
 This is a JavaScript client library for interacting with the xeggex.com cryptoexchange API. It allows you to create orders for cryptocurrencies easily.
 
