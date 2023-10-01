@@ -1,0 +1,58 @@
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs
+
+# Environment variables file
+.env
+
+# User-specific files
+.idea/
+.vscode/
+
+# Compiled output
+/build
+/dist
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+
+# Jest coverage directory
+/coverage
+
+# Next.js build output
+.next
+
+# Nuxt.js build output
+.nuxt
+
+# Vuepress build output
+.vuepress/dist
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Debugging logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pnpm store directory
+.pnpm-store
+.pnpm-workspace
