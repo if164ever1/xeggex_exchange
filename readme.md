@@ -37,3 +37,6 @@ npm install xeggex-cryptoexchange-api
 
 # Using yarn
 yarn add xeggex-cryptoexchange-api
+
+#Run code
+npm ./index.js

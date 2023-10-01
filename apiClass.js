@@ -1,10 +1,19 @@
-const crypto = require( "crypto" );
-const EventEmitter = require( "events" );
+// const crypto = require( "crypto" );
+// const EventEmitter = require( "events" );
+// const WebSocket = require( 'ws' );
+
+
+import crypto from "crypto";
+import EventEmitter from "events";
+import WebSocket from "ws";
+
+
+
 const emitter = new EventEmitter();
-const WebSocket = require( 'ws' );
 
 
-module.exports = class XeggexSocketClient extends EventEmitter {
+
+class XeggexSocketClient extends EventEmitter {
 
     constructor( apiKey, secretKey, wssHost = "wss://api.xeggex.com") {
     	super();
@@ -501,3 +510,5 @@ module.exports = class XeggexSocketClient extends EventEmitter {
         }  
     };   
 }
+
+export default XeggexSocketClient;
