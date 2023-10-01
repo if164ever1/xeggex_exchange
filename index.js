@@ -2,12 +2,12 @@ import XeggexSocketClient from "./apiClass.js";
 import dotenv from "dotenv";
 dotenv.config();
 
-const yourApiKey = process.env.API_KEY;
-const yourApiSecret = process.env.API_SECRET;
+const API_KEY = process.env.API_KEY;
+const API_SECRET = process.env.API_SECRET;
 
 
 
-const xeggexApi = new XeggexSocketClient(yourApiKey, yourApiSecret);
+const xeggexApi = new XeggexSocketClient(API_KEY, API_SECRET);
 
 xeggexApi.on( "notification", ( message ) => {
 	console.log("Type: " + message.method)
