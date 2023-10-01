@@ -1,9 +1,14 @@
 import XeggexSocketClient from "./apiClass.js";
-console.log("Xeggex.com");
+require('dotenv').config();
 
-const yourApiKey = "ihorzim1989@gmail.com";
-const yourApiSecret = "Ihor569ihor569!@#$%Xx";
+const yourApiKey = process.env.API_KEY;
+const yourApiSecret = process.env.API_SECRET;
 
 const xeggexApi = new XeggexSocketClient(yourApiKey, yourApiSecret);
 
-console.log(xeggexApi);
+xeggexApi.on( "notification", ( message ) => {
+	console.log("Type: " + message.method)
+	console.log(JSON.stringify(message, null, 4));
+});
+
+let isconnected = await xeggexApi.waitConnect();

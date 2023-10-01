@@ -15,12 +15,12 @@ const emitter = new EventEmitter();
 
 class XeggexSocketClient extends EventEmitter {
 
-    constructor( apiKey, secretKey, wssHost = "wss://api.xeggex.com") {
+    constructor( apiKey, secretKey, wssHost = "https://api.xeggex.com") {
     	super();
     	
         this._apiKey = apiKey;
         this._secretKey = secretKey;
-        this._wssHost = wssHost || "wss://api.xeggex.com";
+        this._wssHost = wssHost || "https://api.xeggex.com";
 
         this._wss = null;
         this._pingTimeout = null;
@@ -60,6 +60,7 @@ class XeggexSocketClient extends EventEmitter {
 		};
 		
 		this._sendrequest(message, messageId).then((reply) => {
+			console.log("login");
 			if (reply.result == true)
 				console.log("Login Success...")
 		});
