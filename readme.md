@@ -1,6 +1,6 @@
 # Project Name
 
-Brief description of your project.
+This is a JavaScript client library for interacting with the xeggex.com cryptoexchange API. It allows you to create orders for cryptocurrencies easily.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
@@ -12,18 +12,18 @@ Brief description of your project.
 
 ## Getting Started
 
-Provide an introduction to your project. What is it about? What problem does it solve? How can someone benefit from it? 
+This library enables you to interact with the xeggex.com cryptoexchange API programmatically. You can create various types of orders, check account balances, and more.
 
 ## Prerequisites
 
-List any software or libraries that need to be installed before your project can be used.
+Before you start, make sure you have the following:
 
-- Node.js
-- npm or yarn
+- Node.js installed on your system
+- API Key and Secret from xeggex.com (for authentication)
 
 ## Installation
 
-Provide step-by-step instructions on how to install your project.
+To install the library, use npm or yarn:
 
 ```bash
 # Clone the repository
@@ -32,5 +32,8 @@ git clone https://github.com/your-username/your-repository.git
 # Change directory
 cd your-repository
 
-# Install dependencies
-npm install
+# Using npm
+npm install xeggex-cryptoexchange-api
+
+# Using yarn
+yarn add xeggex-cryptoexchange-api
