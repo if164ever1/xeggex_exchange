@@ -2,7 +2,8 @@ import XeggexSocketClient from "./apiClass.js";
 import dotenv from "dotenv";
 import { findByAsset } from "./helper.js";
 import { Balance } from "./Balance.js";
-import { Currency } from "./Currency.js";
+
+
 
 
 dotenv.config();
